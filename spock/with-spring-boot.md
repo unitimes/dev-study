@@ -1,5 +1,5 @@
-#Gradle setting
-##`build.gradle`
+# Gradle setting
+## `build.gradle`
 ```groovy
 apply plugin 'groovy'
 dependencies {
@@ -7,7 +7,7 @@ dependencies {
 	testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
 }
 ```
-#Using spring beans
+# Using spring beans
 ```groovy
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.SpringApplicationContextLoader
