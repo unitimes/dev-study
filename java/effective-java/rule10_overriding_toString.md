@@ -1,6 +1,6 @@
-#Overriding toString()
+# Overriding toString()
 **_`toString()`은 항상 재정의 해야 한다._**
-##`toString()`재정의 시 생각해봐야 할 것들
+## `toString()`재정의 시 생각해봐야 할 것들
 - 가능하면 객체 내의 중요 정보를 전부 담아야 한다.
 - `toString()`이 반환하는 문자열에 포함되는 정보들은 전부 프로그래밍을 통해 가져올 수 있어야 한다.
 	- 그렇지 않으면 `toString()`의 결과를 파싱하려고 할 것이다.
