@@ -1,8 +1,8 @@
-#Javascript의 this
-##this는 전역 객체를 참조
+# Javascript의 this
+## this는 전역 객체를 참조
 전역 변수는 `this.(전역 변수)`로 적근 가능
 
-##메소드를 호출할 때, 메소드 내부의 this는 해당 메소드를 호출한 부모 객체를 참조
+## 메소드를 호출할 때, 메소드 내부의 this는 해당 메소드를 호출한 부모 객체를 참조
 ```javascript
 var val = 100;
 var counter = {
@@ -56,7 +56,7 @@ Person.prototype.name = 'person';
 console.log(Person.prototype.getName()); // person
 ```
 프로토타입 객체 메소드도 마찬가지로 **명시적으로 호출한 부모 객체**를 참조    
-##생성자 함수를 호출할 때, 생성자 함수 코드 내부의 this는 새로 생성된 객체를 참조
+## 생성자 함수를 호출할 때, 생성자 함수 코드 내부의 this는 새로 생성된 객체를 참조
 ```javascript
 function F(v) {
    this.val = v;
@@ -64,4 +64,4 @@ function F(v) {
 var f = new F("constructor function");
 console.log(f.val); // constructor function
 ```
-##apply()와 call()메소드로 호출할 대, 함수의 this는 첫 번째 인자로 넘겨받는 객체를 참조
+## apply()와 call()메소드로 호출할 대, 함수의 this는 첫 번째 인자로 넘겨받는 객체를 참조
