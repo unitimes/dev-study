@@ -1,12 +1,12 @@
-#User guide
-##About Velocity
-####What Velocity is
+# User guide
+## About Velocity
+#### What Velocity is
 **Velocity is a Java-based template engine.**
-####What for
+#### What for
 web pages, SQL, PostScript etc.
-##Using jar
-###Maven
-####for Velocity engine
+## Using jar
+### Maven
+#### for Velocity engine
 ```xml
 <dependency>
   <groupId>org.apache.velocity</groupId>
@@ -14,7 +14,7 @@ web pages, SQL, PostScript etc.
   <version>x.x.x</version>
 </dependency>
 ```
-####Connecting Velocity log to Commons Logging
+#### Connecting Velocity log to Commons Logging
 Choose one of the below
 ```xml
 <dependency>
@@ -41,39 +41,39 @@ Choose one of the below
   <version>x.x.x</version>
 </dependency>
 ```
-##VTL(Velocity Template Language)
-####VTL statement
+## VTL(Velocity Template Language)
+#### VTL statement
 Directive start with `#`
 ```
 #set()
 ```
-####Reference
+#### Reference
 Start with `$`
-> ####String value and Quotes
+> #### String value and Quotes
 > Single quotes(`''`) ensure the value will be as is
 > Double quotes(`""`) allow to use velocity references and directives
 > - `"Hello $name"`
-> ####`#[[don't parse me!]]#` syntax
+> #### `#[[don't parse me!]]#` syntax
 > Unparse the block
 
-##References
-###**Three types**
-####Variables
+## References
+### **Three types**
+#### Variables
 ```$foo```
 $ + VTL Identifier    
 VTL Identifier must start with an alphabetic character    
-####Properties
+#### Properties
 ```
 $customer.Address
 ```
 Returning the value of of the key 'Address' on the hashtable 'cutomer' or using method(```$customer.getAddress()```)
-####Methods
+#### Methods
 ```
 $purchase.getTotal()
 $page.setTitle( "My Home Page" )
 $person.setAttributes( ["Strange", "Weird", "Excited"] )
 ```
-###Formal Reference Notation
+### Formal Reference Notation
 ```
 ${foo}
 
@@ -86,14 +86,14 @@ ${vice}manicac
 $vicemanicac
 ```
 Both are different
-###Quiet Reference Notation
+### Quiet Reference Notation
 ```
 $!foo
 ```
 When the reference is undefined, a blank value is displayed
-##Directives
+## Directives
 Using formal reference notation is possible
-####`#set`
+#### `#set`
 Setting the value of a reference    
 
 When the RHS is a property or method and evaluates null, it will not be assigned to the LHS. Depending the configuration, this mechanism can not remove an existing reference.
