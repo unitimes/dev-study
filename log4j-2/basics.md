@@ -1,5 +1,7 @@
 #Log4j 2
+
 ##기본
+
 ###Hierarchy
 LoggerConfig 단위의 hierarchy를 가짐
 Hierarchy는 LoggerConfig name의 dot(.)으로 구분 됨
