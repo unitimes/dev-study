@@ -1,5 +1,4 @@
 # Eliminate obsolete object references
-
 - Java도 메모리 누수를 신경써야 한다.
 - 참조되고 있는 객체는 garbage collecting 대상이 될 수 없다.
 - 더 이상 사용하지 않는 객체에 대한 참조는 반드시 제거해야 한다.
