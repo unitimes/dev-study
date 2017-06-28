@@ -1,4 +1,4 @@
-#[Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance#Mapped_Superclasses)
+# [Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance#Mapped_Superclasses)
 
 There are 4 ways to implement java inheritance on JPA persistence, basically by using annotaions.
 
@@ -6,11 +6,11 @@ First of all, Through `@Inheritance` you can use three inheritance strategies de
 
 JPA also support mapped superclass concept by using `@MappedSuperclass`.
 
-##Single Table Inheritance
+## Single Table Inheritance
 
-##Joined, Multiple Table Inheritance
+## Joined, Multiple Table Inheritance
 
-##Table Per Class Inheritance
+## Table Per Class Inheritance
 
-##Mapped Superclasses
+## Mapped Superclasses
 
