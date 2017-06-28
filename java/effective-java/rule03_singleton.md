@@ -1,6 +1,6 @@
-#Singleton
-##싱글톤 구현 방법
-###1. public final 필드 이용
+# Singleton
+## 싱글톤 구현 방법
+### 1. public final 필드 이용
 ```java
 public class Elvis {
 	public static final Elvis INSTANCE = new Elvis();
@@ -11,7 +11,7 @@ public class Elvis {
 ```
 - 외부에서 `Elvis.INSTANCE`에 바로 접근
 
-###2. 정적 팩토리 이용
+### 2. 정적 팩토리 이용
 ```java
 public class Elvis {
 	private static final Elvis INSTANCE = new Elvis();
@@ -22,7 +22,7 @@ public class Elvis {
 }
 ```
 
-###3. 원소가 하나뿐이 enum
+### 3. 원소가 하나뿐이 enum
 ```java
 public enum Elvis {
 	INSTANCE;
