@@ -43,14 +43,14 @@ directory에 __.htaccess__ 를 생성하고 파일에 설정을 적용하면 해
 - [LoadModule](https://httpd.apache.org/docs/2.4/en/mod/mod_so.html#loadmodule)
 - [ServerAdmin](https://httpd.apache.org/docs/2.4/en/mod/core.html#serveradmin)
 
-서버가 에러메시지를 client에게 보낼 때 포함할 이메일 주소
+	서버가 에러메시지를 client에게 보낼 때 포함할 이메일 주소
 - [DocumentRoot](https://httpd.apache.org/docs/2.4/en/mod/core.html#documentroot)
 
-서버가 제공할 파일들의 root, 별도의 설정이 없으면 url path를 DocumentRoot에 붙인 경로가 filesystem에서의 경로에 해당.
+	서버가 제공할 파일들의 root, 별도의 설정이 없으면 url path를 DocumentRoot에 붙인 경로가 filesystem에서의 경로에 해당.
 끝에 slash(/) 붙이면 안됨
 - [ServerTokens](https://httpd.apache.org/docs/2.4/en/mod/core.html#servertokens)
 
-응답 헤더에 들어갈 서버 정보 설정.
+	응답 헤더에 들어갈 서버 정보 설정.
 공격 방지를 위해 __Prod__ 로 설정 해야 함. 서버의 종류만 알려 줌.
 - [ServerSignature](https://httpd.apache.org/docs/2.4/en/mod/core.html#serversignature)
 
