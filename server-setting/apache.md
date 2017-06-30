@@ -91,8 +91,11 @@ tomcat과의 통신에 사용할 tomcat의 connector를 지정
 proxy_module, proxy_ajp_module, jk_module 등을 사용. protocol + host + [port] 의 조합으로 통신할 tomcat connector 지정
 
 - proxy_module
-http만 지원
+
+	http만 지원
 - proxy_ajp_module
-ajp 지원, proxy_module 필요
+
+	ajp 지원, proxy_module 필요
 - mod_jk
-ajp지원, 독립적 기능 제공, 설정 다소 복잡
+
+	ajp지원, 독립적 기능 제공, 설정 다소 복잡
