@@ -37,7 +37,7 @@ directory에 __.htaccess__ 를 생성하고 파일에 설정을 적용하면 해
 .htaccess 를 활성화 시키려면 server config에 적절한 AllowOverride 설정을 해야 함.
 ### 주요 지시자(Directive)
 - [ServerRoot](https://httpd.apache.org/docs/2.4/en/mod/core.html#serverroot)
-set apache server directory, 다른 설정 지시자의 상대 경로의 기준이 됨.
+	set apache server directory, 다른 설정 지시자의 상대 경로의 기준이 됨.
 
 - [Listen](https://httpd.apache.org/docs/2.4/en/mod/mpm_common.html#listen)
 - [LoadModule](https://httpd.apache.org/docs/2.4/en/mod/mod_so.html#loadmodule)
