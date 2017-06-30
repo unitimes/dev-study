@@ -36,6 +36,8 @@ uri path에 매핑되어 host가 요청을 처리할 context를 결정 함.
 web application의 name(context descriptor, WAR, exploded application's directory)에 의해 자동으로 결정
 > Web application의 이름은 `Context path + ##Version`로 정해야 하며, 이에 따라 context path, web application, context descriptor의 mapping이 이루어짐.
 > Context path 중간의 `/`는 `#`로 바꿔야 함.
+>
+> Host의 root는 context path ""에 매핑. 이 때 web application의 name은 `ROOT + ##Version`로 지정.
 
 ## 설정
 
