@@ -12,14 +12,14 @@ context descriptors(일반적으로 context.xml 이라 지칭), Host 엘리먼�
 #### 배포 순서
 1. Context descriptors
 2. 압축 되지 않은 web application. 더 최신의 .WAR 가 있으면 압축 되지 않은 web application 삭제 후 .WAR로 재배포
-3. WAR
+3. .WAR
 ### 구동 중인 Tomcat에 application 자동 배포
 Host 엘리먼트의 __autoDeploy__ 속성을 true 설정해야 함.
 #### 배포 대상
 - Host appBase 안에 있는 새로운 .WAR, exploded web application __배포__
-- __.WAR로 배포__한 web application의 최신의 .WAR 제공되면 __재배포__. 기 서비스 중인 구버전이 exploded web application 인 경우(unpackWARs 속성 true인 경우) 구버전은 삭제 됨.
+- __.WAR로 배포__ 한 web application의 최신의 .WAR 제공되면 __재배포__. 기 서비스 중인 구버전이 exploded web application 인 경우(unpackWARs 속성 true인 경우) 구버전은 삭제 됨.
 - `/WEB-INF/web.xml`및 WatchedResource로 정한 파일이 업데이트 되면 __reloading__
-- __Context Descriptor로 배포__한 web application의 Context Descriptor 업데이트 되면 __재배포__
+- __Context Descriptor로 배포__ 한 web application의 Context Descriptor 업데이트 되면 __재배포__
 - 공용 Context Descriptor 업데이트 되면 관계된 모든 web applications __재배포__
 - Host configBase에 Context Descriptor file 추가 시, Context path에 매핑되는 서비스 중인 web application 있으면 __재배포__
 - docBase 삭제 시 __undeployment__
