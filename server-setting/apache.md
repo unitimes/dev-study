@@ -54,23 +54,23 @@ directory에 __.htaccess__ 를 생성하고 파일에 설정을 적용하면 해
 공격 방지를 위해 __Prod__ 로 설정 해야 함. 서버의 종류만 알려 줌.
 - [ServerSignature](https://httpd.apache.org/docs/2.4/en/mod/core.html#serversignature)
 
-서버가 생성하는 문서 끝에 서버 정보를 첨부.
+	서버가 생성하는 문서 끝에 서버 정보를 첨부.
 보안 상 __Off__ 로 설정 해야 함.
 - [User](https://httpd.apache.org/docs/2.4/en/mod/mod_unixd.html#user)
 
-Unix 시스템에서 서버 구동 시 서버가 응답에 사용할 unix user.
+	Unix 시스템에서 서버 구동 시 서버가 응답에 사용할 unix user.
 server를 root로 구동해야 사용할 수 있는 지시자.
 - [Group](https://httpd.apache.org/docs/2.4/en/mod/mod_unixd.html#group)
 
-Unix 시스템에서 서버 구동 시 서버가 응답에 사용할 unix group.
+	Unix 시스템에서 서버 구동 시 서버가 응답에 사용할 unix group.
 server를 root로 구동해야 사용할 수 있는 지시자.
 - [AllowOverride](https://httpd.apache.org/docs/2.4/en/mod/core.html#allowoverride)
 
-`<Directory>`에만 설정 가능.
+	`<Directory>`에만 설정 가능.
 .htaccess 에서 적용할(상위 설정을 override 할) 지시자들을 지정.
 - [Options](https://httpd.apache.org/docs/2.4/en/mod/core.html#options)
 
-특정 디렉토리에서 활성화할 서버 기능들을 지정.
+	특정 디렉토리에서 활성화할 서버 기능들을 지정.
 가장 정교한 directory 조건에 설정한 Options 지시자만 활성화 되나,  +/-를 붙이면 섹션 적용 순서에 따라 merge 됨.
 하나의 Options 지시자에 +/-이 붙은 값과, 붙지 않은 값이 같이 있을 수 없음.
 ```
@@ -78,7 +78,7 @@ server를 root로 구동해야 사용할 수 있는 지시자.
 Options +Indexes Includes
 ```
 - [Order](https://httpd.apache.org/docs/2.4/en/mod/mod_access_compat.html#order)
-directory, .htaccess 에 적용.
+	directory, .htaccess 에 적용.
 Deny, Allow 지시자의 적용 순서 지정. 후위에 오는 지시자가 우위를 가짐.
 Deny, Allow 지시자 모두 match 되지 않으면 후위에 오는 지시자가 access 여부 결정.
 ```
