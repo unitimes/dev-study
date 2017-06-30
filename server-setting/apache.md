@@ -81,11 +81,10 @@ Options +Indexes Includes
 	directory, .htaccess 에 적용.
 Deny, Allow 지시자의 적용 순서 지정. 후위에 오는 지시자가 우위를 가짐.
 Deny, Allow 지시자 모두 match 되지 않으면 후위에 오는 지시자가 access 여부 결정.
-
-> `# 아래와 같이 세팅하면 Deny, Allow 조건에 해당하지 않는 요청은 모두 access 가능`
->
-> `Order Deny,Allow`
-
+```
+# 아래와 같이 세팅하면 Deny, Allow 조건에 해당하지 않는 요청은 모두 access 가능
+Order Deny,Allow
+```
 ### Tomcat 연동
 tomcat과의 통신에 사용할 tomcat의 connector를 지정
 #### connector 지정
