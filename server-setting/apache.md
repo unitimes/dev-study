@@ -37,30 +37,39 @@ directory에 __.htaccess__ 를 생성하고 파일에 설정을 적용하면 해
 .htaccess 를 활성화 시키려면 server config에 적절한 AllowOverride 설정을 해야 함.
 ### 주요 지시자(Directive)
 - [ServerRoot](https://httpd.apache.org/docs/2.4/en/mod/core.html#serverroot)
+
 set apache server directory, 다른 설정 지시자의 상대 경로의 기준이 됨.
 - [Listen](https://httpd.apache.org/docs/2.4/en/mod/mpm_common.html#listen)
 - [LoadModule](https://httpd.apache.org/docs/2.4/en/mod/mod_so.html#loadmodule)
 - [ServerAdmin](https://httpd.apache.org/docs/2.4/en/mod/core.html#serveradmin)
+
 서버가 에러메시지를 client에게 보낼 때 포함할 이메일 주소
 - [DocumentRoot](https://httpd.apache.org/docs/2.4/en/mod/core.html#documentroot)
+
 서버가 제공할 파일들의 root, 별도의 설정이 없으면 url path를 DocumentRoot에 붙인 경로가 filesystem에서의 경로에 해당.
 끝에 slash(/) 붙이면 안됨
 - [ServerTokens](https://httpd.apache.org/docs/2.4/en/mod/core.html#servertokens)
+
 응답 헤더에 들어갈 서버 정보 설정.
 공격 방지를 위해 __Prod__ 로 설정 해야 함. 서버의 종류만 알려 줌.
 - [ServerSignature](https://httpd.apache.org/docs/2.4/en/mod/core.html#serversignature)
+
 서버가 생성하는 문서 끝에 서버 정보를 첨부.
 보안 상 __Off__ 로 설정 해야 함.
 - [User](https://httpd.apache.org/docs/2.4/en/mod/mod_unixd.html#user)
+
 Unix 시스템에서 서버 구동 시 서버가 응답에 사용할 unix user.
 server를 root로 구동해야 사용할 수 있는 지시자.
 - [Group](https://httpd.apache.org/docs/2.4/en/mod/mod_unixd.html#group)
+
 Unix 시스템에서 서버 구동 시 서버가 응답에 사용할 unix group.
 server를 root로 구동해야 사용할 수 있는 지시자.
 - [AllowOverride](https://httpd.apache.org/docs/2.4/en/mod/core.html#allowoverride)
+
 `<Directory>`에만 설정 가능.
 .htaccess 에서 적용할(상위 설정을 override 할) 지시자들을 지정.
 - [Options](https://httpd.apache.org/docs/2.4/en/mod/core.html#options)
+
 특정 디렉토리에서 활성화할 서버 기능들을 지정.
 가장 정교한 directory 조건에 설정한 Options 지시자만 활성화 되나,  +/-를 붙이면 섹션 적용 순서에 따라 merge 됨.
 하나의 Options 지시자에 +/-이 붙은 값과, 붙지 않은 값이 같이 있을 수 없음.
