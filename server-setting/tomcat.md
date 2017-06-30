@@ -31,7 +31,7 @@ __자동 배포 대상이 되는 Context descriptor__
 각 web application의 `/META-INF/context.xml`, Host 엘리먼트의 __xmlBase__ 에 설정한 directory 내에 위치한 .xml 파일들(`/META-INF/context.xml`에 우선함). 
 > server.xml 안에 Context 엘리먼트를 정의하는 것으로도 가능하나 비추하는 방법
 #### Context path의 결정
-__Context path__가 uri path에 매핑되어 요청을 처리할 context 결정 함.
+__Context path__ 가 uri path에 매핑되어 요청을 처리할 context 결정 함.
 
 - 자동으로 결정
 web application의 name(context descriptor, WAR, exploded application's directory)에 의해 자동으로 결정
